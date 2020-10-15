@@ -1,0 +1,19 @@
+{
+  "name": "shuffle_js",
+  "version": "1.0.0",
+  "description": "Simple JavaScript program to shuffle a deck of cards.",
+  "main": "Shuffle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Captain-Cathode/Shuffle.git"
+  },
+  "author": "Kevin Lydon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Captain-Cathode/Shuffle/issues"
+  },
+  "homepage": "https://github.com/Captain-Cathode/Shuffle#readme"
+}
