@@ -35,7 +35,7 @@ function dealOneCard(deck) {
     if(deck === undefined) {
         return undefined;
     }
-    else{
+    else {
         return deck.pop();
     }
 }
