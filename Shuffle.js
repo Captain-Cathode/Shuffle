@@ -16,9 +16,12 @@ function generateDeck(size) {
 
 // Required functionality
 
-// Shuffles the deck. i is an incremental index through the array.
-// j is a random integer such that i=<j<deck.length 
+// Shuffles the deck. 
 function shuffle(deck) {
+    if(deck === undefined) {
+        return undefined;
+    }
+    // j is a random integer such that i=<j<deck.length
     for(let i = 0; i < deck.length-1 ; i += 1) {
         let j = randInt(deck.length - i) + i;
         let currentCard = deck[i];
@@ -29,10 +32,7 @@ function shuffle(deck) {
 // Pops one card off the top of the deck. Returns the value of the card if there are any cards
 // left on the deck, 0 otherwise.
 function dealOneCard(deck) {
-    if(deck.length >= 1) {
-        return deck.pop();    
-    }
-    else return 0
+        return deck.pop();
 }
 
 // Print function
@@ -44,7 +44,7 @@ function printShuffle() {
     console.log("Shuffled Deck\n",deck, '\n')
     let x = dealOneCard(deck)
     console.log("Full Deck Deal")
-    while(x > 0) {
+    while(x != undefined) {
         console.log(x)
         x = dealOneCard(deck)
     }
