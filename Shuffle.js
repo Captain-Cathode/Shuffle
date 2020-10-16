@@ -29,8 +29,8 @@ function shuffle(deck) {
         deck[j] = currentCard;
     }
 }
-// Pops one card off the top of the deck. Returns the value of the card if there are any cards
-// left on the deck, 0 otherwise.
+// Pops one card off the top of the deck. Returns the value of the card
+// if there are any cards on the deck.
 function dealOneCard(deck) {
     if(deck !== undefined) {
         return deck.pop();
