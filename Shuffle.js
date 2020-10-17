@@ -18,7 +18,7 @@ function generateDeck(size) {
 
 // Shuffles the deck. 
 function shuffle(deck) {
-    if(deck === undefined) {
+    if(deck === undefined || deck === null) {
         return undefined;
     }
     // j is a random integer such that i=<j<deck.length
@@ -32,14 +32,14 @@ function shuffle(deck) {
 // Pops one card off the top of the deck. Returns the value of the card
 // if there are any cards on the deck.
 function dealOneCard(deck) {
-    if(deck !== undefined) {
+    if(deck === undefined || deck === null) {
         return deck.pop();
     }
 }
 
 // Print function
-/*
-function printShuffle() {
+
+/*function printShuffle() {
     deck = generateDeck(52)
     console.log("Original Deck\n",deck, '\n')
     shuffle(deck)
@@ -52,5 +52,5 @@ function printShuffle() {
     }
 }
 
-printShuffle()
-*/
+printShuffle()*/
+
